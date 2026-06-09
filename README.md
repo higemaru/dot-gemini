@@ -57,3 +57,6 @@ ln -s ~/_src/dot-gemini ~/.gemini
   実行時に自動生成される一時フォルダ（`antigravity/scratch/`）や、会話データデータベース（`antigravity/brain/`、`antigravity/conversations/`）は、セキュリティと容量の観点から Git 追跡対象から完全に除外されています。
 * **シンボリックリンクの維持**:
   設定を追加・変更した際は、直接 `~/.gemini` を編集すれば、自動的にこのリポジトリ内の実ファイルが更新されます。変更後は通常通り Git でコミット＆プッシュしてください。
+* **ルールファイルの名称（GEMINI.md と CLAUDE.md の使い分け）**:
+  * **グローバル（全体適用）**: `~/.gemini/GEMINI.md` に配置し、Antigravity によって自動で読み込まれます。
+  * **プロジェクト個別（ワークスペース適用）**: 本リポジトリ内の各種カスタムスキルやテンプレート（`antigravity/skills/`, `antigravity/templates/`）は、Claude Code との互換性を維持・併用するため、プロジェクト固有のルールファイルとして **`CLAUDE.md`** をそのまま生成・参照する設定になっています（通常 Antigravity のプロジェクト個別ルールで使われる `GEMINI.md` や `AGENTS.md` ではない点にご注意ください）。これにより、同一の原稿・開発フォルダを Claude Code と Antigravity の両方から同じルールで操作できます。
