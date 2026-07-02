@@ -12,7 +12,7 @@
 ├── .gitignore             # ホワイトリスト形式の除外設定
 ├── GEMINI.md              # グローバルルール（旧 CLAUDE.md）
 ├── README.md              # この手順書
-├── rules/                 # ジャンル別DNA（novel-dna.md / technical-dna.md）
+├── rules/                 # 共通ワークフローとジャンル別DNA（writing-workflow.md / novel-dna.md / technical-dna.md）
 ├── config/
 │   ├── config.json        # アプリのグローバル設定
 │   ├── mcp_config.json    # MCPサーバー設定
