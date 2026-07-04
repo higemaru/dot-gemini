@@ -25,3 +25,6 @@
 rules/character_sheet.md
 !antigravity/templates/**
 !antigravity/scripts/**
+
+# context/ はユーザー個人のコンテキスト（persona.md等）用の非公開ディレクトリ。
+# 意図的にホワイトリストに含めていない（冒頭の全除外のまま）。
