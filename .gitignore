@@ -21,5 +21,7 @@
 !config/mcp_config.json
 !config/skills/**
 !rules/**
+# ただしcharacter_sheet.mdは非公開（Geminiの性格を育てるための個人ファイル）
+rules/character_sheet.md
 !antigravity/templates/**
 !antigravity/scripts/**
