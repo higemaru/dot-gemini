@@ -13,7 +13,8 @@
 ├── GEMINI.md              # グローバルルール（旧 CLAUDE.md）
 ├── README.md              # この手順書
 ├── rules/                 # 共通ワークフローとジャンル別DNA（writing-workflow.md / novel-dna.md / technical-dna.md）
-│   └── character_sheet.md # Geminiの性格・口調（任意・非公開）
+│   └── private/           # 非公開ファイル置き場（.gitignoreで丸ごと除外）
+│       └── character_sheet.md # Geminiの性格・口調（任意・非公開）
 ├── context/
 │   └── persona.md         # ユーザーの人となり・好み・価値観（任意・非公開）
 ├── config/
@@ -59,7 +60,7 @@ ln -s ~/_src/dot-gemini ~/.gemini
 * **`.gitignore` による安全な管理**:
   実行時に自動生成される一時フォルダ（`antigravity/scratch/`）や、会話データデータベース（`antigravity/brain/`、`antigravity/conversations/`）は、セキュリティと容量の観点から Git 追跡対象から完全に除外されています。
 * **性格・ユーザー情報のカスタマイズ（任意）**:
-  `rules/character_sheet.md`（Gemini自身の性格・口調）と `context/persona.md`（ユーザーの人となり）は、このリポジトリでは追跡していない個人用ファイルです。存在する場合のみ `GEMINI.md` から参照されます。公開リポジトリなので、機微な情報を書く場合は非公開のままにしておいてください。
+  `rules/private/character_sheet.md`（Gemini自身の性格・口調）と `context/persona.md`（ユーザーの人となり）は、このリポジトリでは追跡していない個人用ファイルです。存在する場合のみ `GEMINI.md` から参照されます。公開リポジトリなので、機微な情報を書く場合は非公開のままにしておいてください。
 * **シンボリックリンクの維持**:
   設定を追加・変更した際は、直接 `~/.gemini` を編集すれば、自動的にこのリポジトリ内の実ファイルが更新されます。変更後は通常通り Git でコミット＆プッシュしてください。
 * **ルールファイルの名称（GEMINI.md と CLAUDE.md の使い分け）**:
