@@ -1,7 +1,7 @@
 # 執筆ワークフロー
 
 執筆プロジェクト（小説・技術書）専用のルール。
-プロジェクト側の CLAUDE.md から @~/.gemini/rules/writing-workflow.md で import して使う。
+プロジェクト側の GEMINI.md から @~/.gemini/rules/writing-workflow.md で import して使う。
 
 ## 執筆の進め方
 新しい作品・章・節を始める時は、以下の順で進めることを基本とする。
@@ -32,8 +32,8 @@ Geminiは求められたフェーズの作業をする。勝手に先のフェ�
 
 ## Geminiへの動作指示（執筆特有）
 - 推敲・修正を提案する場合は [元の文] → [修正案] の形式で並べて見せる
-- ジャンル判定は各プロジェクトの CLAUDE.md 冒頭宣言で行う
+- ジャンル判定は各プロジェクトの GEMINI.md 冒頭宣言で行う
 
-## ジャンル別DNA（各プロジェクトの CLAUDE.md で宣言して使う）
+## ジャンル別DNA（各プロジェクトの GEMINI.md で宣言して使う）
 - 小説:  @~/.gemini/rules/novel-dna.md
 - 技術書: @~/.gemini/rules/technical-dna.md

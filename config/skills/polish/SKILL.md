@@ -1,13 +1,15 @@
 ---
 name: polish
 description: 初稿を推敲する。修正案を [元の文] → [修正案] 形式で提示する。置き換えはあなたが判断する。
+context: fork
+agent: Explore
 ---
 
 ## 実行手順
 
-1. CLAUDE.md を読んでジャンルを確認し、対応する DNA ファイルを読む
-   - 小説: @~/.claude/rules/novel-dna.md
-   - 技術書: @~/.claude/rules/technical-dna.md
+1. GEMINI.md を読んでジャンルを確認し、対応する DNA ファイルを読む
+   - 小説: @~/.gemini/rules/novel-dna.md
+   - 技術書: @~/.gemini/rules/technical-dna.md
 
 2. 対象ファイルを確認する
    - 指定があればそのファイル

@@ -1,6 +1,8 @@
 ---
 name: check-style
 description: 原稿がDNAの文体ルールに沿っているかを確認する。誤字チェック（/check-text）とは別物。文体の質的な確認。
+context: fork
+agent: Explore
 ---
 
 ## 他のチェックスキルとの使い分け
@@ -10,9 +12,9 @@ description: 原稿がDNAの文体ルールに沿っているかを確認する�
 
 ## 実行手順
 
-1. CLAUDE.md を読んでジャンルを確認し、対応する DNA ファイルを読む
-   - 小説: @~/.claude/rules/novel-dna.md
-   - 技術書: @~/.claude/rules/technical-dna.md
+1. GEMINI.md を読んでジャンルを確認し、対応する DNA ファイルを読む
+   - 小説: @~/.gemini/rules/novel-dna.md
+   - 技術書: @~/.gemini/rules/technical-dna.md
 
 2. 対象ファイルを確認する
    - 指定があればそのファイル
