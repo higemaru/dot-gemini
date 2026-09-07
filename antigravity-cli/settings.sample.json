@@ -1,8 +1,8 @@
 {
   "colorScheme": "tokyo night",
   "statusLine": {
-    "type": "",
-    "command": "",
+    "type": "command",
+    "command": "python3 ~/.gemini/antigravity-cli/statusline.py",
     "enabled": true
   },
   "trustedWorkspaces": [],

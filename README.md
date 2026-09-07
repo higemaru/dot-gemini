@@ -21,9 +21,12 @@
 │   ├── config.json        # アプリのグローバル設定
 │   ├── mcp_config.json    # MCPサーバー設定
 │   └── skills/            # /draft などのカスタムスキル
-└── antigravity/
-    ├── scripts/           # 共通スクリプト（export-transcript.py など）
-    └── templates/         # プロジェクト開始用テンプレート
+├── antigravity/
+│   ├── scripts/           # 共通スクリプト（export-transcript.py など）
+│   └── templates/         # プロジェクト開始用テンプレート
+└── antigravity-cli/
+    ├── settings.sample.json # 設定サンプル
+    └── statusline.py      # ステータスライン表示スクリプト
 ```
 
 ---
